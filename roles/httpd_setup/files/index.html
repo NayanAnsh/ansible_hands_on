@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayan's Ansible Deployment Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 50px;
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: #00ff9d;
+            text-shadow: 0 0 15px rgba(0, 255, 157, 0.5);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 50px 0;
+        }
+
+        .tech-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 255, 157, 0.2);
+        }
+
+        .tech-card i {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .deployment-steps {
+            text-align: left;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        a{
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Nayan's DevOps Project</h1>
+            <h2>Automated EC2 Deployment using Ansible</h2>
+        </div>
+
+        <div class="tech-stack">
+            <div class="tech-card">
+                <i class="fab fa-aws"></i>
+                <h3>AWS EC2</h3>
+                <p>Cloud Instance Management</p>
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-robot"></i>
+                <h3>Ansible</h3>
+                <p>Configuration Automation</p>
+            </div>
+            <div class="tech-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Modern Web Standards</p>
+            </div>
+            <div class="tech-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Styling & Animations</p>
+            </div>
+        </div>
+
+        <div class="deployment-steps">
+            <h3>Deployment Process:</h3>
+            <ol>
+                <li>EC2 Instance Provisioning</li>
+                <li>Ansible Configuration Management</li>
+                <li>Web Server Setup (httpd)</li>
+                <li>HTML/CSS Deployment</li>
+                <li>Security Group Configuration</li>
+                <li>Automated Testing</li>
+            </ol>
+        </div>
+
+        <footer>
+            <p>Created with ❤️ by Nayan</p>
+            <p>Powered by Ansible Automation</p>
+            <P>Guided by <a href="https://www.youtube.com/@MPrashant">M Prashant </a></P>
+        </footer>
+    </div>
+</body>
+</html>

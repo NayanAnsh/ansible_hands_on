@@ -1,0 +1,12 @@
+---
+- name: donalod files
+  hosts: all
+  become: yes
+  tasks:
+  - name: start download file
+    get_url:
+      url: https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tgz
+      dest: /tmp/python/
+      owner: nayan
+      group: antman
+      mode: 0777

@@ -1,0 +1,9 @@
+---
+- name: first playbook mid
+  hosts: all
+
+  tasks:
+  - name: Test connectivity
+    ping:
+  - name: "Print output"
+    debug: msg="This is working" 

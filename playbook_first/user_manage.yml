@@ -1,0 +1,15 @@
+---
+- name: user manager
+  hosts: all
+  become: yes
+  
+  tasks:
+  - name: make user
+    user:
+      name: nayan
+      comment: this is owner of aws account
+      home: /home/nayan/
+      shell: /bin/bash
+      groups: antman,nayan
+      
+

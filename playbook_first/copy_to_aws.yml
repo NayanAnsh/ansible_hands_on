@@ -1,0 +1,11 @@
+- name: copy file to host
+  hosts: all
+  become: yes
+  tasks:
+  - name: copy files 
+    copy:
+      src: /root/mikasa.txt
+      dest: /tmp/
+      owner: root
+      mode: 0777
+      backup: true

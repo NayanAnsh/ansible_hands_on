@@ -1,0 +1,19 @@
+---
+# tasks file for install-python
+
+- name: install python
+  yum:
+    name: python3
+    state: present
+  become: true
+- name: install pip
+  yum:
+    name: python3-pip
+    state: present
+  become: true
+- name: install python firewall
+  yum:
+    name: python-firewall
+    state: present
+  become: true
+

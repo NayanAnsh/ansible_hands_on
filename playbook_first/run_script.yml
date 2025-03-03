@@ -1,0 +1,14 @@
+--- 
+- name: run script on host 
+  hosts: all
+  become: yes
+  tasks:
+    - name: run script 
+      shell: ./working.sh >> /tmp/test.log 2>&1
+      args:
+        chdir: /tmp/
+        
+    - name: Debug script execution
+      shell: ls -l /tmp/
+
+    

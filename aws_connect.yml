@@ -1,0 +1,10 @@
+- name: Configure EC2 instance
+  hosts: ec2
+  become: yes  # Enables sudo
+  tasks:
+    - name: Install required packages (for Amazon Linux/RHEL/CentOS)
+      yum:
+        name: git
+        state: present
+      
+

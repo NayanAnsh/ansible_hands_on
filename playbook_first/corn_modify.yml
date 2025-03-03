@@ -1,0 +1,11 @@
+--- 
+- name: modify corn
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: remove corn
+    cron:
+      name: run test script
+      state: absent
+      user: root

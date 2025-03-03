@@ -1,0 +1,9 @@
+---
+- name: change permission
+  hosts: all
+  become: yes
+  tasks:
+  - name: change perm
+    file: 
+      path: /tmp/mikasa.txt
+      mode: u=rw,g=r

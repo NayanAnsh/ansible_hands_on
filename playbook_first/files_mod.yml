@@ -1,0 +1,14 @@
+---
+- name: file module
+  hosts: all
+  become: yes
+  tasks:
+  - name: creat a file
+    file:
+      path: /tmp/nayan.txt
+      state: absent
+  - name: create a directory 
+    file: 
+      path: /tmp/yoyo
+      state: directory 
+

@@ -1,0 +1,21 @@
+- name: cron setup
+  hosts: all
+  become: yes
+  
+  tasks:
+  - name: add cronie
+    yum:
+      name: cronie
+      state: present
+  - name: adding cron job
+    cron:
+      name: PATH
+      env: yes
+      minute: 30
+      hour: 18
+      day: 15
+      month: "*"
+      weekday: "*"
+      user: root
+      job: /tmp/working.sh
+      disabled: yes

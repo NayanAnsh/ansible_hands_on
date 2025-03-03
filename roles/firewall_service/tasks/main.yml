@@ -1,0 +1,9 @@
+---
+# tasks file for firewall_service
+- name: Enable a service in firewalld 
+  firewalld:
+    service: "{{ service_name }}"
+    state: enabled
+    permanent: true
+  become: true
+  notify: Reload firewall 
